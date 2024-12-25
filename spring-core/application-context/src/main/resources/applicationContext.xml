@@ -4,9 +4,10 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Bean Definitions -->
-    <bean id="userRepository" class="net.mahtabalam.UserRepository" />
+    <!-- singleton is the dafault bean scope in Spring -->
+    <bean id="userRepository" class="net.mahtabalam.UserRepository" scope="singleton"/>
 
-    <bean id="userService" class="net.mahtabalam.UserService">
+    <bean id="userService" class="net.mahtabalam.UserService" scope="singleton">
         <constructor-arg ref="userRepository" />
     </bean>
 
