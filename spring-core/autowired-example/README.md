@@ -6,7 +6,7 @@ Marks a constructor, field, setter method, or config method as to be autowired b
 
 ### @Bean 
 
-@Bean indicates that a method produces a bean to be managed by the Spring container.
+@Bean indicates that a method produces a bean to be managed by the Spring container. By default, the bean name will be the same as the method name.
 
 ### @Configuration
 
