@@ -10,8 +10,8 @@ Spring Beans provides the configuration framework and basic functionality to ins
 
 Spring Context provides access to configured objects like a registry (a context). It inherits its features from Spring Beans and adds support for internationalization, event propagation, resource loading, and the transparent creation of contexts.
 
-spring-context have dependency on spring-beans which depends on spring-core. 
-So spring-context dependency will include both spring-beans and spring-core.
+**spring-context have dependency on spring-beans which depends on spring-core. 
+So spring-context dependency will include both spring-beans and spring-core.**
 
 ```xml
 <dependency>
