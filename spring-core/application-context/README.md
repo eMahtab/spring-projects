@@ -1,6 +1,8 @@
 ### spring-context
 
-spring-context have dependency on spring-beans which depends on spring-core
+spring-context have dependency on spring-beans which depends on spring-core. 
+So spring-context dependency will include both spring-beans and spring-core.
+
 ```xml
 <dependency>
   <groupId>org.springframework</groupId>
