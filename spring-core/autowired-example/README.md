@@ -14,14 +14,31 @@ Marks a constructor, field, setter method, or config method as to be autowired b
 by the Spring container to generate bean definitions and service requests for those beans at runtime, for example:
 
 ```java
-@Configuration
- public class AppConfig {
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-     @Bean
-     public MyBean myBean() {
-         // instantiate, configure and return bean ...
-     }
- }
+@Configuration
+public class AppConfig {
+    @Bean
+    public GreetingService greetingService() {
+        return new GreetingService();
+    }
+
+    @Bean
+    public FieldInjectionExample fieldInjectionExample() {
+        return new FieldInjectionExample();
+    }
+
+    @Bean
+    public SetterInjectionExample setterInjectionExample() {
+        return new SetterInjectionExample();
+    }
+
+    @Bean
+    public ConstructorInjectionExample constructorInjectionExample() {
+        return new ConstructorInjectionExample(greetingService());
+    }
+}
 ```
 
 ### AnnotationConfigApplicationContext
