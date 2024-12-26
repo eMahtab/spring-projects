@@ -45,6 +45,25 @@ public class AppConfig {
 
 Standalone application context, accepting component classes as input — in particular @Configuration-annotated classes, but also plain @Component types and JSR-330 compliant classes using jakarta.inject annotations.
 
+```java
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Main {
+    public static void main(String[] args) {
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+
+        ConstructorInjectionExample constructorExample = context.getBean(ConstructorInjectionExample.class);
+        constructorExample.showGreeting();
+
+        FieldInjectionExample fieldExample = context.getBean(FieldInjectionExample.class);
+        fieldExample.showGreeting();
+
+        SetterInjectionExample setterExample = context.getBean(SetterInjectionExample.class);
+        setterExample.showGreeting();
+    }
+}
+```
 
 
 
