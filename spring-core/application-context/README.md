@@ -1,4 +1,6 @@
+### spring-context
 
+spring-context have dependency on spring-beans which depends on spring-core
 
 
 
