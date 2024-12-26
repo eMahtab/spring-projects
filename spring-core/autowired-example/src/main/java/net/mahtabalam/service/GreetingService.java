@@ -1,4 +1,4 @@
-package net.mahtabalam;
+package net.mahtabalam.service;
 
 public class GreetingService {
     public String greet() {

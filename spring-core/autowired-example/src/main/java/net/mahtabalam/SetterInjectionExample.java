@@ -1,5 +1,6 @@
 package net.mahtabalam;
 
+import net.mahtabalam.service.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class SetterInjectionExample {

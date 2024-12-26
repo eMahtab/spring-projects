@@ -1,5 +1,9 @@
-package net.mahtabalam;
+package net.mahtabalam.app;
 
+import net.mahtabalam.config.AppConfig;
+import net.mahtabalam.ConstructorInjectionExample;
+import net.mahtabalam.FieldInjectionExample;
+import net.mahtabalam.SetterInjectionExample;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
