@@ -1,3 +1,7 @@
+### spring-core
+
+Basic building block for Spring that in conjunction with Spring Beans provides dependency injection and IoC features.
+
 ### spring-context
 
 Spring Context provides access to configured objects like a registry (a context). It inherits its features from Spring Beans and adds support for internationalization, event propagation, resource loading, and the transparent creation of contexts.
