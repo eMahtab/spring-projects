@@ -1,7 +1,13 @@
 ### spring-context
 
 spring-context have dependency on spring-beans which depends on spring-core
-
+```xml
+<dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-context</artifactId>
+  <version>6.2.1</version>
+</dependency>
+```
 
 
 
