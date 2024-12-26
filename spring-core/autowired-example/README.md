@@ -24,6 +24,12 @@ by the Spring container to generate bean definitions and service requests for th
  }
 ```
 
+### AnnotationConfigApplicationContext
+
+Standalone application context, accepting component classes as input — in particular @Configuration-annotated classes, but also plain @Component types and JSR-330 compliant classes using jakarta.inject annotations.
+
+
+
 
 # References :
 https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/Bean.html
@@ -31,3 +37,5 @@ https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframe
 https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/Configuration.html
 
 https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html
+
+https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html
