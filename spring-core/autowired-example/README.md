@@ -71,6 +71,10 @@ public class Main {
 }
 ```
 
+In above main method, AnnotationConfigApplicationContext class scans the specified configuration class (AppConfig) for @Bean methods.
+All beans explicitly defined in this class using @Bean methods are registered.
+
+We can also pass a package as an argument to AnnotationConfigApplicationContext class constructor, in that case it will perform a component scan within the specified package. It registers beans annotated with @Component, @Service, @Repository, @Controller, etc.
 
 
 # References :
