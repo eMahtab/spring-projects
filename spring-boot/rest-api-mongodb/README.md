@@ -70,3 +70,11 @@ class ProductController {
 }
 ```
 
+### POST Endpoint : /api/v1/products
+
+!["Post Endpoint"](images/post-endpoint.png?raw=true)
+
+### Mongo Express : store database, products collection
+
+!["Mongo Express"](images/mongo-express.png?raw=true)
+
