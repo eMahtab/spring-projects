@@ -20,6 +20,16 @@ So spring-context dependency will include both spring-beans and spring-core.**
   <version>6.2.1</version>
 </dependency>
 ```
+### Bean xml config 
+```xml
+    <!-- Bean Definitions -->
+    <!-- singleton is the dafault bean scope in Spring -->
+    <bean id="userRepository" class="net.mahtabalam.UserRepository" scope="singleton"/>
+
+    <bean id="userService" class="net.mahtabalam.UserService" scope="singleton">
+        <constructor-arg ref="userRepository" />
+    </bean>
+```
 
 ```java
 public class Main {
