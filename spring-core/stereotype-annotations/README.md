@@ -30,6 +30,8 @@ public class UserRepository {
 ```java
 @Service
 public class UserService {
+
+    @Autowired
     private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
