@@ -13,6 +13,40 @@ For example, these stereotype annotations make ideal targets for pointcuts. @Rep
 **@Component :** Indicates that the annotated class is a component. Such classes are considered as candidates for auto-detection when using annotation-based configuration and classpath scanning.
 
 ```java
+@Repository
+public class UserRepository {
+    private final Map<Long, User> users = new HashMap<>();
+
+    public User findById(Long id) {
+        return users.get(id);
+    }
+
+    public void save(User user) {
+        users.put(user.getId(), user);
+    }
+}
+```
+
+```java
+@Service
+public class UserService {
+    private final UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public User getUserById(Long id) {
+        return userRepository.findById(id);
+    }
+
+    public void saveUser(User user) {
+        userRepository.save(user);
+    }
+}
+```
+
+```java
 package net.mahtabalam;
 
 import net.mahtabalam.model.User;
