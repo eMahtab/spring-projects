@@ -1,5 +1,7 @@
 # REST API with MongoDB
 
+### Running the code :
+
 To run the code, first start the mongodb (either as a docker container, or install mongodb on your machine), **`docker compose up`** 
 
 ```java
