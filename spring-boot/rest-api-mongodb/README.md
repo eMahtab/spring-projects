@@ -1,12 +1,12 @@
 # REST API with MongoDB
 
-### Running the code :
+## Running the code :
 
 To run the code, first start the mongodb (either as a docker container, or install mongodb on your machine). There is a docker-compose.yml file which defines mongodb and mongo-express (one of the many GUI client for MongoDB), just run **`docker compose up`**
 
 After that run `RestApiMongodbApplication` class inside `net.mahtabalam` package
 
-### Project :
+## Project :
 
 !["Spring project"](images/spring-project.png?raw=true)
 
@@ -70,11 +70,11 @@ class ProductController {
 }
 ```
 
-### POST Endpoint : /api/v1/products
+## POST Endpoint : /api/v1/products
 
 !["Post Endpoint"](images/post-endpoint.png?raw=true)
 
-### Mongo Express : store database, products collection
+## Mongo Express : store database, products collection
 
 !["Mongo Express"](images/mongo-express.png?raw=true)
 
