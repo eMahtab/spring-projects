@@ -2,7 +2,7 @@
 
 ### Running the code :
 
-To run the code, first start the mongodb (either as a docker container, or install mongodb on your machine), **`docker compose up`**. There is a docker-compose.yml file which defines mongodb and mongo-express (one of the many GUI client for MongoDB).
+To run the code, first start the mongodb (either as a docker container, or install mongodb on your machine). There is a docker-compose.yml file which defines mongodb and mongo-express (one of the many GUI client for MongoDB), just run **`docker compose up`**
 
 ```java
 @RestController
