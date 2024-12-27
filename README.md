@@ -8,6 +8,8 @@ This repository contains Spring projects code.
 
 2. Injecting dependencies using @Autowired : [spring-core/autowired-example](https://github.com/eMahtab/spring-projects/tree/main/spring-core/autowired-example)
 
+3. Annotations based configuration and classpath scanning using Stereotype annotations : [spring-core/stereotype-annotations](https://github.com/eMahtab/spring-projects/tree/main/spring-core/stereotype-annotations)
+
 
 ## Spring Boot
 
