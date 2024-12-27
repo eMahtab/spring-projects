@@ -6,6 +6,8 @@ To run the code, first start the mongodb (either as a docker container, or insta
 
 After that just run `RestApiMongodbApplication` class inside `net.mahtabalam` package
 
+
+### ProductController 
 ```java
 @RestController
 @RequestMapping("/api/v1/products")
