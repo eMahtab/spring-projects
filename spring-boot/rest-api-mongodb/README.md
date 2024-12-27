@@ -6,6 +6,9 @@ To run the code, first start the mongodb (either as a docker container, or insta
 
 After that run `RestApiMongodbApplication` class inside `net.mahtabalam` package
 
+### Project :
+
+!["Spring project"](images/spring-project.png?raw=true)
 
 ### ProductController 
 ```java
