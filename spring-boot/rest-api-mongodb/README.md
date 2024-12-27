@@ -70,3 +70,6 @@ class ProductController {
 }
 ```
 
+###
+
+!["Post Endpoint"](images/post-endpoint.png?raw=true)
