@@ -22,6 +22,20 @@ public class GreetingController {
 }
 ```
 
+## View
+```html
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="|Heyyo, ${name}!|" />
+</body>
+</html>
+```
+
 
 ## References :
 1. https://spring.io/guides/gs/serving-web-content
