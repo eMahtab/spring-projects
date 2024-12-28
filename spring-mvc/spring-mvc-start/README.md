@@ -36,6 +36,9 @@ public class GreetingController {
 </html>
 ```
 
+!["View"](images/view.png?raw=true)
+
+
 
 ## References :
 1. https://spring.io/guides/gs/serving-web-content
