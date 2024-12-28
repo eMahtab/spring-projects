@@ -21,3 +21,9 @@ public class GreetingController {
     }
 }
 ```
+
+
+## References :
+1. https://spring.io/guides/gs/serving-web-content
+
+2. https://github.com/spring-guides/gs-serving-web-content
