@@ -4,7 +4,7 @@
 !["Simple Spring MVC project"](images/spring-mvc-project.png?raw=true)
 
 
-## Controller
+## Controller and Model
 ```java
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
