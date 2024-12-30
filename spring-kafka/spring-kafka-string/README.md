@@ -71,3 +71,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
 ```
+
+
+# References :
+https://github.com/ali-bouali/apache-kafka-with-spring-boot-reactive
