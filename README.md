@@ -22,6 +22,6 @@ This repository contains Spring projects code.
 
 1. Producing & Consuming String messages with Spring Kafka : [spring-kafka/spring-kafka-string](https://github.com/eMahtab/spring-projects/tree/main/spring-kafka/spring-kafka-string)
 
-2. Producing & Consuming Json messages with Spring Kafka : [spring-kafka/spring-kafka-json](https://github.com/eMahtab/spring-projects/tree/main/spring-kafka/spring-kafka-json)
+2. Producing & Consuming JSON messages with Spring Kafka : [spring-kafka/spring-kafka-json](https://github.com/eMahtab/spring-projects/tree/main/spring-kafka/spring-kafka-json)
 
    
