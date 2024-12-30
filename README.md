@@ -20,6 +20,6 @@ This repository contains Spring projects code.
 
 ## Spring Kafka
 
-1. Producing & Consuming String messages with Spring Kafka : [spring-kafka/spring-kafka-start](https://github.com/eMahtab/spring-projects/tree/main/spring-kafka/spring-kafka-start)
+1. Producing & Consuming String messages with Spring Kafka : [spring-kafka/spring-kafka-string](https://github.com/eMahtab/spring-projects/tree/main/spring-kafka/spring-kafka-string)
 
    
