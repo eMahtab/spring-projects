@@ -1,6 +1,6 @@
 # Producing & Consuming String messages with Spring Kafka
 
-## Message API
+## Messages API
 ```java
 @RestController
 @RequestMapping("/api/v1/messages")
@@ -16,6 +16,8 @@ public class MessageController {
     }
 }
 ```
+
+!["Messages API"](images/messages-api.png?raw=true)
 
 ### Producer
 ```java
