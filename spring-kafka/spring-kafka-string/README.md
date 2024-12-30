@@ -50,3 +50,22 @@ public class KafkaStringConsumer {
     }
 }
 ```
+### application.yml
+```yml
+spring:
+  application:
+    name: spring-kafka
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: testGroup
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        spring.json.trusted.packages: '*'
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+```
