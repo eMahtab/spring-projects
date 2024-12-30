@@ -1,5 +1,7 @@
 # Producing & Consuming String messages with Spring Kafka
 
+This demo project is based on https://www.youtube.com/watch?v=KQDTtvZMS9c&t=1988s 
+
 ## Messages API
 ```java
 @RestController
