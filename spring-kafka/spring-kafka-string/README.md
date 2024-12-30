@@ -1,6 +1,6 @@
 # Producing & Consuming String messages with Spring Kafka
 
-This demo project is based on https://www.youtube.com/watch?v=KQDTtvZMS9c&t=1988s 
+This demo project is based on https://www.youtube.com/watch?v=KQDTtvZMS9c&t=1988s , in which a producer sends messages to test-topic and a consumer consumes those messages.
 
 ## Messages API
 ```java
