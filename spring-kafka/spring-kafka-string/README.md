@@ -2,6 +2,10 @@
 
 This demo project is based on https://www.youtube.com/watch?v=KQDTtvZMS9c&t=1988s , in which a producer sends messages to test-topic and a consumer consumes those messages. The messages are plain text (String) messages. Make sure Kafka server is running on default port 9092, before running the application.
 
+### Project
+
+!["Spring Kafka Project"](images/project.png?raw=true)
+
 ## Messages API
 ```java
 @RestController
