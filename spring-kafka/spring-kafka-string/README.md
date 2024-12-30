@@ -1,5 +1,22 @@
 # Producing & Consuming String messages with Spring Kafka
 
+## Message API
+```java
+@RestController
+@RequestMapping("/api/v1/messages")
+public class MessageController {
+
+    @Autowired
+    private KafkaStringProducer kafkaProducer;
+
+    @PostMapping
+    public ResponseEntity<String> sendMessage(@RequestBody String message) {
+        kafkaProducer.sendMessage(message);
+        return ResponseEntity.ok("Message queued successfully");
+    }
+}
+```
+
 ### Producer
 ```java
 @Service
