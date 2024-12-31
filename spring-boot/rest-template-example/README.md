@@ -12,8 +12,6 @@ RestTemplate and RestClient share the same infrastructure (i.e. request factorie
 
 !["Project"](images/project.png?raw=true)
 
-
-
 ## Client :
 ```java
 @Service
