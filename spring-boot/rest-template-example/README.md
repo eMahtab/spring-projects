@@ -12,3 +12,12 @@ RestTemplate and RestClient share the same infrastructure (i.e. request factorie
 
 !["Project"](images/project.png?raw=true)
 
+
+
+
+
+
+
+# References :
+
+https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html
