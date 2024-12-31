@@ -12,7 +12,9 @@ RestTemplate and RestClient share the same infrastructure (i.e. request factorie
 
 For this demo we first run this https://github.com/eMahtab/spring-projects/tree/main/spring-boot/rest-api-mongodb REST API at default port 8080, it exposes CRUD operations at **`/api/v1/products`**
 
+
 !["Project"](images/project.png?raw=true)
+
 
 ## Client :
 ```java
