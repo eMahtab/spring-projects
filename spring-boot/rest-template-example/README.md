@@ -4,7 +4,7 @@ Synchronous client to perform HTTP requests, exposing a simple, template method 
 
 RestTemplate is typically used as a shared component. However, its configuration does not support concurrent modification, and as such its configuration is typically prepared on startup. If necessary, you can create multiple, differently configured RestTemplate instances on startup. Such instances may use the same underlying ClientHttpRequestFactory if they need to share HTTP client resources.
 
-NOTE: As of 6.1, RestClient offers a more modern API for synchronous HTTP access. For asynchronous and streaming scenarios, consider the reactive WebClient.
+**NOTE: As of Spring 6.1, RestClient offers a more modern API for synchronous HTTP access. For asynchronous and streaming scenarios, consider the reactive WebClient.**
 
 RestTemplate and RestClient share the same infrastructure (i.e. request factories, request interceptors and initializers, message converters, etc.), so any improvements made therein are shared as well. However, RestClient is the focus for new higher-level features.
 
