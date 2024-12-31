@@ -134,6 +134,18 @@ spring.application.name=rest-template-example
 server.port=8090
 ```
 
+## API Calls :
+
+!["GET call"](images/GET.png?raw=true)
+
+!["POST call"](images/POST.png?raw=true)
+
+!["PUT call"](images/PUT.png?raw=true)
+
+!["GET exchange call"](images/GET-exchange.png?raw=true)
+
+!["POST exchange call"](images/POST-exchange.png?raw=true)
+
 # References :
 
 https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html
