@@ -136,13 +136,23 @@ server.port=8090
 
 ## API Calls :
 
+### GET call : using restTemplate.getForObject()
+
 !["GET call"](images/GET.png?raw=true)
+
+### POST call : using restTemplate.postForEntity()
 
 !["POST call"](images/POST.png?raw=true)
 
+### PUT call : using restTemplate.put()
+
 !["PUT call"](images/PUT.png?raw=true)
 
+### GET call : using restTemplate.exchange()
+
 !["GET exchange call"](images/GET-exchange.png?raw=true)
+
+### POST call : using restTemplate.exchange()
 
 !["POST exchange call"](images/POST-exchange.png?raw=true)
 
