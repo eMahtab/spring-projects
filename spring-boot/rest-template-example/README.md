@@ -122,6 +122,11 @@ public class CatalogController {
 }
 ```
 
+## application.properties
+```properties
+spring.application.name=rest-template-example
+server.port=8090
+```
 
 # References :
 
