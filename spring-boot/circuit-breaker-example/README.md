@@ -142,3 +142,7 @@ resilience4j:
 # FETCH_MOVIE_REVIEWS Circuit Breaker Open
 
 !["FETCH_MOVIE_REVIEWS Circuit Breaker Open"](images/movie-reviews-circuit-open.png?raw=true)
+
+# FETCH_MOVIE_INFO Circuit Breaker Open
+
+!["FETCH_MOVIE_INFO Circuit Breaker Open"](images/movie-info-circuit-open.png?raw=true)
