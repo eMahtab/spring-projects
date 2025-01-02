@@ -46,3 +46,29 @@ public class MovieInfoService {
     }
 }
 ```
+# FETCH_MOVIE_REVIEWS Circuit Breaker and fallback method
+```java
+@Service
+public class MovieReviewService {
+
+    private final Logger logger = LoggerFactory.getLogger(MovieReviewService.class);
+
+    private final RestTemplate restTemplate;
+
+    public MovieReviewService(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
+    @CircuitBreaker(name = "FETCH_MOVIE_REVIEWS", fallbackMethod = "getMovieReviewsFallback")
+    public List<Review> getMovieReviews(String movieId) {
+        String url = "http://localhost:8083/movies/" + movieId + "/reviews";
+        Review[] reviews = restTemplate.getForObject(url, Review[].class);
+        return reviews != null ? Arrays.asList(reviews) : List.of();
+    }
+
+    public List<Review> getMovieReviewsFallback(String movieId, Throwable t) {
+        logger.warn("getMovieReviewsFallback triggered for movieId:{} with error:{}", movieId, t.getMessage());
+        return List.of();
+    }
+}
+```
