@@ -72,3 +72,6 @@ public class MovieReviewService {
     }
 }
 ```
+# Circuit Breakers Status :
+
+!["Circuit Breakers Status"](images/circuit-breakers-status.png?raw=true)
