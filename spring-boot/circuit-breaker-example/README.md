@@ -146,3 +146,10 @@ resilience4j:
 # FETCH_MOVIE_INFO Circuit Breaker Open
 
 !["FETCH_MOVIE_INFO Circuit Breaker Open"](images/movie-info-circuit-open.png?raw=true)
+
+
+# References :
+
+1. https://www.youtube.com/watch?v=o8RO38KbWvA&list=PLqq-6Pq4lTTbXZY_elyGv7IkKrfkSrX5e&index=1
+
+2. https://www.youtube.com/watch?v=9AXAUlp3DBw&t=500s
