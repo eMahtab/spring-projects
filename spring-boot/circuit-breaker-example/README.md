@@ -5,7 +5,7 @@ This demo is based on [Java Brains video](https://www.youtube.com/watch?v=o8RO38
 
 ## All the microservices registered with Eureka server
 
-This demo creates three microservices, movie-catalog-service calls the movie-info-service (to fetch the info for a movie) and movie-review-service (to fetch the reviews for a movie).
+This demo creates three microservices, [movie-catalog-service](https://github.com/eMahtab/spring-projects/blob/main/spring-boot/circuit-breaker-example/README.md#movie-catalog-service) calls the [movie-info-service](https://github.com/eMahtab/spring-projects/blob/main/spring-boot/circuit-breaker-example/README.md#movie-info-service) (to fetch the info for a movie) and [movie-review-service](https://github.com/eMahtab/spring-projects/blob/main/spring-boot/circuit-breaker-example/README.md#movie-review-service) (to fetch the reviews for a movie).
 
 !["Microservices registered with Eureka server"](images/eureka-server.png?raw=true)
 
