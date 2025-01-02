@@ -72,6 +72,53 @@ public class MovieReviewService {
     }
 }
 ```
+
+## movie-catalog-service Circuit Breakers Config in application.yml
+```yml
+spring:
+  application:
+    name: movie-catalog-service
+
+server:
+  port: 8081
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      FETCH_MOVIE_REVIEWS:
+        registerHealthIndicator: true
+        eventConsumerBufferSize: 10
+        failureRateThreshold: 50
+        minimumNumberOfCalls: 5
+        automaticTransitionFromOpenToHalfOpenEnabled: false
+        waitDurationInOpenState: 3s
+        permittedNumberOfCallsInHalfOpenState: 3
+        slidingWindowSize: 10
+        slidingWindowType: COUNT_BASED
+      FETCH_MOVIE_INFO:
+        registerHealthIndicator: true
+        eventConsumerBufferSize: 10
+        failureRateThreshold: 50
+        minimumNumberOfCalls: 5
+        automaticTransitionFromOpenToHalfOpenEnabled: false
+        waitDurationInOpenState: 3s
+        permittedNumberOfCallsInHalfOpenState: 3
+        slidingWindowSize: 10
+        slidingWindowType: COUNT_BASED
+```
+
 # Circuit Breakers Status :
 
 !["Circuit Breakers Status"](images/circuit-breakers-status.png?raw=true)
