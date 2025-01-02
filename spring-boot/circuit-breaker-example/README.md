@@ -21,3 +21,28 @@ This demo creates three microservices, [movie-catalog-service](https://github.co
 # Movie Catalog Service
 
 !["Movie Catalog Service"](images/movie-catalog-service.png?raw=true)
+
+
+# FETCH_MOVIE_INFO Circuit Breaker and fallback method
+```java
+@Service
+public class MovieInfoService {
+
+    private final Logger logger = LoggerFactory.getLogger(MovieInfoService.class);
+    private final RestTemplate restTemplate;
+
+    public MovieInfoService(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
+    @CircuitBreaker(name = "FETCH_MOVIE_INFO", fallbackMethod = "getMovieInfoFallback")
+    public Movie getMovieInfo(String movieId) {
+        return restTemplate.getForObject("http://localhost:8082/movies/" + movieId, Movie.class);
+    }
+
+    public Movie getMovieInfoFallback(String movieId, Throwable t) {
+        logger.warn("getMovieInfoFallback triggered for movieId:{} with error:{}", movieId, t.getMessage());
+        return new Movie("","","");
+    }
+}
+```
