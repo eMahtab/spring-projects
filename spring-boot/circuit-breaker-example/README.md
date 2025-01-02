@@ -138,3 +138,7 @@ resilience4j:
 # Circuit Breakers Status :
 
 !["Circuit Breakers Status"](images/circuit-breakers-status.png?raw=true)
+
+# FETCH_MOVIE_REVIEWS Circuit Breaker Open
+
+!["FETCH_MOVIE_REVIEWS Circuit Breaker Open"](images/movie-reviews-circuit-open.png?raw=true)
