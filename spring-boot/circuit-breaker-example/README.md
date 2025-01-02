@@ -8,3 +8,17 @@ This demo is based on [Java Brains video](https://www.youtube.com/watch?v=o8RO38
 **This demo creates three microservices, movie-catalog-service calls the movie-info-service (to fetch the info for a movie) and movie-review-service (to fetch the reviews for a movie).**
 
 !["Microservices registered with Eureka server"](images/eureka-server.png?raw=true)
+
+
+## Movie Info Service
+
+!["Movie Info Service"](images/movie-info-service.png?raw=true)
+
+## Movie Review Service
+
+!["Movie Review Service"](images/movie-review-service.png?raw=true)
+
+
+## Movie Catalog Service
+
+!["Movie Catalog Service"](images/movie-catalog-service.png?raw=true)
