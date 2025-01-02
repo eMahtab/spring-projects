@@ -18,6 +18,8 @@ This repository contains Spring projects code.
 
 1. REST API with MongoDB : [spring-boot/rest-api-mongodb](https://github.com/eMahtab/spring-projects/tree/main/spring-boot/rest-api-mongodb)
 
+2. Spring RestTemplate example : [spring-boot/rest-template-example](https://github.com/eMahtab/spring-projects/tree/main/spring-boot/rest-template-example)
+
 ## Spring Kafka
 
 1. Producing & Consuming String messages with Spring Kafka : [spring-kafka/spring-kafka-string](https://github.com/eMahtab/spring-projects/tree/main/spring-kafka/spring-kafka-string)
