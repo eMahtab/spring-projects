@@ -169,3 +169,15 @@ public class FeignClientConfig {
     }
 }
 ```
+
+## GET
+
+## POST
+
+## GET /id
+
+## PUT /id
+
+
+# References :
+https://github.com/eMahtab/spring-projects/tree/main/spring-boot/rest-api-mongodb
