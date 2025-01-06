@@ -5,12 +5,14 @@ import net.mahtabalam.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/products")
@@ -27,8 +29,10 @@ class ProductController {
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable String id) {
-        return service.getProductById(id).orElseThrow(() -> new RuntimeException("Product not found"));
+    public ResponseEntity<?> getProductById(@PathVariable String id) {
+        Optional<Product> product = service.getProductById(id);
+        return product.isPresent() ? ResponseEntity.ok(product.get())
+                : ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of("error", "Product not found"));
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.HEAD)
