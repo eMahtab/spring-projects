@@ -172,12 +172,19 @@ public class FeignClientConfig {
 
 ## POST
 
+!["Post"](images/post.png?raw=true)
+
 ## GET
+
+!["Get"](images/get.png?raw=true)
 
 ## GET /id
 
+!["Get by id"](images/get-by-id.png?raw=true)
+
 ## PUT /id
 
+!["Put"](images/put.png?raw=true)
 
 # References :
 https://github.com/eMahtab/spring-projects/tree/main/spring-boot/rest-api-mongodb
