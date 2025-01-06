@@ -2,6 +2,9 @@
 
 This demo is based on [Java Brains video](https://www.youtube.com/watch?v=o8RO38KbWvA&list=PLqq-6Pq4lTTbXZY_elyGv7IkKrfkSrX5e), with some modifications and it uses Resilience4j rather than Hysterix to implement Circuit breaker functionality. But the overall gist is same.
 
+## TMDB API KEY
+This project calls APIs from [The Movie DB](https://www.themoviedb.org/) , you would need to replace the api.key in application.properties file in movie-info-service and movie-review-service, while running this project.
+
 
 ## All the microservices registered with Eureka server
 
@@ -142,3 +145,14 @@ resilience4j:
 # FETCH_MOVIE_REVIEWS Circuit Breaker Open
 
 !["FETCH_MOVIE_REVIEWS Circuit Breaker Open"](images/movie-reviews-circuit-open.png?raw=true)
+
+# FETCH_MOVIE_INFO Circuit Breaker Open
+
+!["FETCH_MOVIE_INFO Circuit Breaker Open"](images/movie-info-circuit-open.png?raw=true)
+
+
+# References :
+
+1. https://www.youtube.com/watch?v=o8RO38KbWvA&list=PLqq-6Pq4lTTbXZY_elyGv7IkKrfkSrX5e&index=1
+
+2. https://www.youtube.com/watch?v=9AXAUlp3DBw&t=500s
