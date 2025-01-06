@@ -22,6 +22,8 @@ This repository contains Spring projects code.
 
 3. Circuit Breaker example with Resilience4j : [spring-boot/circuit-breaker-example](https://github.com/eMahtab/spring-projects/tree/main/spring-boot/circuit-breaker-example)
 
+4. Feign Client example with Exception Handling : [spring-boot/feign-client-example](https://github.com/eMahtab/spring-projects/tree/main/spring-boot/feign-client-example)
+
 ## Spring Kafka
 
 1. Producing & Consuming String messages with Spring Kafka : [spring-kafka/spring-kafka-string](https://github.com/eMahtab/spring-projects/tree/main/spring-kafka/spring-kafka-string)
