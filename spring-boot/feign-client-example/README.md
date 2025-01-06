@@ -90,7 +90,7 @@ public class ProductService {
 }
 ```
 
-## FeignClient
+## Feign client
 
 ```java
 @FeignClient(name = "product-client", url = "${products.api.url}", configuration = FeignClientConfig.class)
@@ -154,6 +154,18 @@ public class CustomErrorDecoder implements ErrorDecoder {
             }
         }
         return new Default().decode(methodKey, response);
+    }
+}
+```
+
+## Feign client config
+```java
+@Configuration
+public class FeignClientConfig {
+
+    @Bean
+    public ErrorDecoder errorDecoder() {
+        return new CustomErrorDecoder();
     }
 }
 ```
