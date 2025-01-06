@@ -116,3 +116,17 @@ public interface ProductClient {
 
 }
 ```
+
+## Application
+
+```java
+@SpringBootApplication
+@EnableFeignClients
+public class FeignClientExampleApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FeignClientExampleApplication.class, args);
+	}
+
+}
+```
