@@ -170,9 +170,9 @@ public class FeignClientConfig {
 }
 ```
 
-## GET
-
 ## POST
+
+## GET
 
 ## GET /id
 
