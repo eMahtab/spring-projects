@@ -1,6 +1,6 @@
 # Streaming API
 
-To send a stream of data, **server sets the Transfer-Encoding to chunked**
+To send a stream of data, **server sets the Transfer-Encoding to chunked** and communicate to the client to **keep the connection alive**.
 
 ## Streaming endpoint : /stream1
 
