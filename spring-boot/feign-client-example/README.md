@@ -4,6 +4,8 @@ This demo project uses FeignClient to make HTTP calls. We first run [Rest API Mo
 
 ## Project :
 
+!["Spring Starter Project"](images/spring-project.png?raw=true)
+
 !["Project"](images/project.png?raw=true)
 
 ## Controller :
