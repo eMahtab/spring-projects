@@ -1,5 +1,7 @@
 # Streaming API
 
+To send a stream of data, **server sets the Transfer-Encoding to chunked**
+
 ## Streaming endpoint : /stream1
 
 !["chunked data"](images/stream1.png?raw=true)
