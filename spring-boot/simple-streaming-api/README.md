@@ -1,5 +1,13 @@
 # Streaming API
 
+## Streaming endpoint : /stream1
+
+!["chunked data"](images/stream1.png?raw=true)
+
+## Streaming endpoint : /stream2
+
+!["chunked data"](images/stream2.png?raw=true)
+
 ```java
 @RestController
 public class StreamController {
