@@ -92,5 +92,7 @@ spring:
 ```
 
 
+!["Project Logs"](images/logs.png?raw=true)
+
 # References :
 https://github.com/ali-bouali/apache-kafka-with-spring-boot-reactive
