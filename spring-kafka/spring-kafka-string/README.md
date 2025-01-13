@@ -8,6 +8,15 @@ This demo project is based on https://www.youtube.com/watch?v=KQDTtvZMS9c&t=1988
 
 !["Spring Kafka Project"](images/project.png?raw=true)
 
+## Step 1 : Start Zookeeper
+
+!["Start Zookeeper"](images/zookeeper-start.png?raw=true)
+
+## Step 2 : Start Kafka server
+
+!["Start Kafka server"](images/kafka-server-start.png?raw=true)
+
+
 ## Messages API
 ```java
 @RestController
