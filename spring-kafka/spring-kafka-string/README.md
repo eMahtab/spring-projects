@@ -10,9 +10,13 @@ This demo project is based on https://www.youtube.com/watch?v=KQDTtvZMS9c&t=1988
 
 ## Step 1 : Start Zookeeper
 
+**`bin/zookeeper-server-start.sh config/zookeeper.properties`**
+
 !["Start Zookeeper"](images/zookeeper-start.png?raw=true)
 
 ## Step 2 : Start Kafka server
+
+**`bin/kafka-server-start.sh config/server.properties`**
 
 !["Start Kafka server"](images/kafka-server-start.png?raw=true)
 
