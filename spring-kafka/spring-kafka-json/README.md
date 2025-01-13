@@ -1,11 +1,27 @@
 # Producing & Consuming JSON messages with Spring Kafka
 
 This demo project is based on https://www.youtube.com/watch?v=KQDTtvZMS9c&t=1988s , in which a producer sends messages to demo-topic and a consumer consumes those messages.
+
 The messages are sent in JSON format. Make sure Kafka server is running on default port 9092, before running the application.
+
+## Make sure Kafka server is running on default port 9092, before running the application.
 
 ## Project :
 
 !["Spring Kafka Project"](images/project.png?raw=true)
+
+
+## Step 1 : Start Zookeeper
+
+**`bin/zookeeper-server-start.sh config/zookeeper.properties`**
+
+!["Start Zookeeper"](images/zookeeper-start.png?raw=true)
+
+## Step 2 : Start Kafka server
+
+**`bin/kafka-server-start.sh config/server.properties`**
+
+!["Start Kafka server"](images/kafka-server-start.png?raw=true)
 
 ## Messages API
 
