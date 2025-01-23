@@ -267,3 +267,7 @@ public class SpringDataJpaExampleApplication {
  HikariPool-1 - Shutdown completed.
 ```
 
+# References :
+1. https://spring.io/guides/gs/accessing-data-jpa
+
+2. https://mkyong.com/spring-boot/spring-boot-spring-data-jpa
