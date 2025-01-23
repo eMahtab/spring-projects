@@ -230,3 +230,40 @@ public class SpringDataJpaExampleApplication {
 }
 ```
 
+## Output :
+```
+ findAll()
+ -------------------------------
+ Book{id=1, title='Book A', authorName='Author A', publishDate=2025-01-20}
+ Book{id=2, title='Book B', authorName='Author B', publishDate=2025-01-08}
+ Book{id=3, title='Book C', authorName='Author C', publishDate=2024-06-10}
+ Book{id=4, title='Book D', authorName='Author D', publishDate=2023-05-05}
+
+ Find book with id 1
+--------------------------------
+ Book{id=1, title='Book A', authorName='Author A', publishDate=2025-01-20}
+
+ Find book with Title `Book B`
+--------------------------------------------
+ Book{id=2, title='Book B', authorName='Author B', publishDate=2025-01-08}
+
+ Book found with findByPublishedDateAfter(), after 2023/7/1
+ --------------------------------------------
+ Book{id=1, title='Book A', authorName='Author A', publishDate=2025-01-20}
+ Book{id=2, title='Book B', authorName='Author B', publishDate=2025-01-08}
+ Book{id=3, title='Book C', authorName='Author C', publishDate=2024-06-10}
+
+
+ Book delete where ID = 2L
+--------------------------------------------
+ findAll()
+ -------------------------------
+ Book{id=1, title='Book A', authorName='Author A', publishDate=2025-01-20}
+ Book{id=3, title='Book C', authorName='Author C', publishDate=2024-06-10}
+ Book{id=4, title='Book D', authorName='Author D', publishDate=2023-05-05}
+
+ Closing JPA EntityManagerFactory for persistence unit 'default'
+ HikariPool-1 - Shutdown initiated...
+ HikariPool-1 - Shutdown completed.
+```
+
