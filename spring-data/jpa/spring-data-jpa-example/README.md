@@ -97,3 +97,40 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 }
 ```
 
+## Service
+```java
+@Service
+public class BookService {
+
+    private final BookRepository bookRepository;
+
+    BookService(BookRepository bookRepository){
+        this.bookRepository = bookRepository;
+    }
+
+    public List<Book> findAll() {
+        return bookRepository.findAll();
+    }
+
+    public Optional<Book> findById(Long id) {
+        return bookRepository.findById(id);
+    }
+
+    public List<Book> findByTitle(String title) {
+        return bookRepository.findByTitle(title);
+    }
+
+    public Book save(Book book) {
+        return bookRepository.save(book);
+    }
+
+    public void deleteById(Long id) {
+        bookRepository.deleteById(id);
+    }
+
+    public List<Book> findByPublishedDateAfter(LocalDate date) {
+        return bookRepository.findByPublishedDateAfter(date);
+    }
+}
+```
+
