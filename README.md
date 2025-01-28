@@ -16,7 +16,7 @@ This repository contains Spring projects code.
 
 ## Spring Boot
 
-1. REST API with MongoDB : [spring-boot/rest-api-mongodb](https://github.com/eMahtab/spring-projects/tree/main/spring-boot/rest-api-mongodb)
+1. REST API with MongoDB and Swagger UI : [spring-boot/rest-api-mongodb](https://github.com/eMahtab/spring-projects/tree/main/spring-boot/rest-api-mongodb)
 
 2. Spring RestTemplate example : [spring-boot/rest-template-example](https://github.com/eMahtab/spring-projects/tree/main/spring-boot/rest-template-example)
 
