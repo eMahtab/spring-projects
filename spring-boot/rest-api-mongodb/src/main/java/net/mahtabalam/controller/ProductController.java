@@ -1,5 +1,11 @@
 package net.mahtabalam.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import net.mahtabalam.model.Product;
 import net.mahtabalam.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +26,7 @@ class ProductController {
     @Autowired
     private ProductService service;
 
+
     @GetMapping
     public List<Product> getAllProducts(@RequestParam(required = false) String category) {
         if (category != null) {
@@ -28,6 +35,14 @@ class ProductController {
         return service.getAllProducts();
     }
 
+    @Operation(summary = "Get product by id", description = "Fetch product by id")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Product found",
+                    content = @Content(mediaType = "application/json",
+                            schema = @Schema(implementation = Product.class),
+                            examples = @ExampleObject(value = "{\"id\":\"6798424b802e4e48c21a277a\",\"name\":\"GARMIN Forerunner 55\",\"category\":\"smartwatch\"}"))),
+            @ApiResponse(responseCode = "404", description = "Product not found")
+    })
     @GetMapping("/{id}")
     public ResponseEntity<?> getProductById(@PathVariable String id) {
         Optional<Product> product = service.getProductById(id);

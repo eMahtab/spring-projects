@@ -78,3 +78,7 @@ class ProductController {
 
 !["Mongo Express"](images/mongo-express.png?raw=true)
 
+
+# References :
+
+1. https://www.baeldung.com/spring-rest-openapi-documentation
