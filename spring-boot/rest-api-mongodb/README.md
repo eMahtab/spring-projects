@@ -79,6 +79,18 @@ class ProductController {
 !["Mongo Express"](images/mongo-express.png?raw=true)
 
 
+# Let's add openapi documentation for our API
+
+We can use `springdoc-openapi-starter-webmvc-ui` to add swagger API documentation for our API endpoints.
+
+```xml
+<dependency>
+   <groupId>org.springdoc</groupId>
+   <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+   <version>2.8.3</version>
+</dependency>
+```
+
 # References :
 
 1. https://www.baeldung.com/spring-rest-openapi-documentation
