@@ -91,7 +91,7 @@ We can use `springdoc-openapi-starter-webmvc-ui` to add swagger API documentatio
 </dependency>
 ```
 
-!["Swagger UI"](images/swagger-ui.png?raw=true)
+!["Swagger UI"](images/swagger-ui.jpg?raw=true)
 
 # References :
 
