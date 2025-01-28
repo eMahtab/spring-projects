@@ -91,6 +91,8 @@ We can use `springdoc-openapi-starter-webmvc-ui` to add swagger API documentatio
 </dependency>
 ```
 
+!["Swagger UI"](images/swagger-ui.png?raw=true)
+
 # References :
 
 1. https://www.baeldung.com/spring-rest-openapi-documentation
