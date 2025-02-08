@@ -12,8 +12,11 @@ One very simple way to handle exception is to surround the code which can result
 
 ## ProductController
 
-In the ProductController below, we added methods to handle error scenarios e.g. when product with given id is not found in GET/DELETE/PATCH operation, and when 
-in POST call the required name field is not sent by client, also to handle other error scenarios e.g. while deleting or patching a product.
+In the ProductController below, we added methods to handle error scenarios 
+
+1. When product with given id is not found in GET/DELETE/PATCH operation
+2. When in POST call the required name field is not sent by client
+3. When any error occurs while deleting or patching a product 
 
 **Note that we are throwing application specific exceptions, e.g. ProductNotFoundException, MissingRequiredFieldException, ProductPatchException and ProductDeleteException.**
 
