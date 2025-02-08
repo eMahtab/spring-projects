@@ -14,6 +14,10 @@ One very simple way to handle exception is to surround the code which can result
 
 !["Product with id not found"](images/error-1.png)
 
+### POST - Required field, name missing in the request body
+
+!["Required field missing in request body"](images/error-2.png)
+
 
 ## ProductController
 
