@@ -1,9 +1,19 @@
 # Error Handling in Spring
 
+## Project Structure
+
 !["Project Structure"](images/project.png)
+
+## How to handle error/exceptions
+
+One very simple way to handle exception is to surround the code which can result in error/exception with try-catch, and then handle the thrown exception.
+
+
 
 ## ProductController
 
+In the ProductController below, we added methods to handle error scenarios e.g. when product with given id is not found in GET/DELETE/PATCH operation, also when 
+To handle other error scenarios e.g. error while deleting or patching a product, 
 ```java
 @RestController
 @RequestMapping("/api/v1/products")
