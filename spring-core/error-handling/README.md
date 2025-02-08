@@ -14,6 +14,10 @@ One very simple way to handle exception is to surround the code which can result
 
 In the ProductController below, we added methods to handle error scenarios e.g. when product with given id is not found in GET/DELETE/PATCH operation, also when 
 To handle other error scenarios e.g. error while deleting or patching a product, 
+
+Note that we are throwing application specific exceptions, e.g. ProductNotFoundException, MissingRequiredFieldException, ProductPatchException and ProductDeleteException.
+
+
 ```java
 @RestController
 @RequestMapping("/api/v1/products")
