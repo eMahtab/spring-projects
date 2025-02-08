@@ -10,7 +10,10 @@ One very simple way to handle exception is to surround the code which can result
 
 ## Error Handling
 
+### GET - Product with given id not found
+
 !["Product with id not found"](images/error-1.png)
+
 
 ## ProductController
 
