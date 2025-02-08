@@ -12,11 +12,15 @@ One very simple way to handle exception is to surround the code which can result
 
 ### GET - Product with given id not found
 
-!["Product with id not found"](images/error-1.png)
+!["Product with given id not found"](images/error-1.png)
 
 ### POST - Required field, name missing in the request body
 
 !["Required field missing in request body"](images/error-2.png)
+
+### DELETE - Product with given id not found
+
+!["Product with given id not found"](images/error-3.png)
 
 
 ## ProductController
