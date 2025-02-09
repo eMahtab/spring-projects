@@ -8,6 +8,20 @@ In Spring we can add extra (@ExceptionHandler) methods to any controller to spec
 
 **👉 Note : This is already a great improvement over https://github.com/eMahtab/spring-projects/tree/main/spring-core/error-handling approach.**
 
+## Error Handling
+
+### GET - Product with given id not found
+
+!["Product with given id not found"](images/error-1.png)
+
+### POST - Required field, name missing in the request body
+
+!["Required field missing in request body"](images/error-2.png)
+
+### DELETE - Product with given id not found
+
+!["Product with given id not found"](images/error-3.png)
+
 ```java
 @RestController
 @RequestMapping("/api/v1/products")
