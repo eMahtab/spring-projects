@@ -6,7 +6,7 @@ In Spring we can add extra (@ExceptionHandler) methods to any controller to spec
 
 **In the below ProductController, note that we are not using try-catch blocks within controller methods, rather we have defined error handler methods annotated with @ExceptionHandler, depending on the type of Exception thrown at runtime the corresponding error handler method will be invoked by Spring.**
 
-This is already a great improvement over https://github.com/eMahtab/spring-projects/tree/main/spring-core/error-handling approach.
+**👉 Note : This is already a great improvement over https://github.com/eMahtab/spring-projects/tree/main/spring-core/error-handling approach.**
 
 ```java
 @RestController
