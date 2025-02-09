@@ -123,4 +123,4 @@ In Spring, when building web applications (e.g. in Spring MVC app) that return H
 
 Both @ControllerAdvice and @RestControllerAdvice are used for global exception handling and to apply common functionality across multiple controllers.
 
-@ControllerAdvice is used in Spring MVC application that returns views (HTML, JSP, etc.). And @RestControllerAdvice is used, when we are building a REST API where responses should be JSON/XML.
+**@ControllerAdvice is used in Spring MVC application that returns views (HTML, JSP, etc.). And @RestControllerAdvice is used, when we are building a REST API where responses should be JSON/XML.**
