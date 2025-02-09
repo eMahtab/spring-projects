@@ -2,12 +2,6 @@
 
 In Spring we can add extra (@ExceptionHandler) methods to any controller to specifically handle exceptions thrown by request handling (@RequestMapping) methods in the same controller. Methods annotated with @ExceptionHandler are used to build a custom error response.
 
-## ProductController
-
-**In the below ProductController, note that we are not using try-catch blocks within controller methods, rather we have defined error handler methods annotated with @ExceptionHandler, depending on the type of Exception thrown at runtime the corresponding error handler method will be invoked by Spring.**
-
-**👉 Note : This is already a great improvement over https://github.com/eMahtab/spring-projects/tree/main/spring-core/error-handling approach.**
-
 ## Error Handling
 
 ### GET - Product with given id not found
@@ -21,6 +15,12 @@ In Spring we can add extra (@ExceptionHandler) methods to any controller to spec
 ### DELETE - Product with given id not found
 
 !["Product with given id not found"](images/error-3.png)
+
+## ProductController
+
+**In the below ProductController, note that we are not using try-catch blocks within controller methods, rather we have defined error handler methods annotated with @ExceptionHandler, depending on the type of Exception thrown at runtime the corresponding error handler method will be invoked by Spring.**
+
+**👉 Note : This is already a great improvement over https://github.com/eMahtab/spring-projects/tree/main/spring-core/error-handling approach.**
 
 ```java
 @RestController
