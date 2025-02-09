@@ -12,6 +12,7 @@ This repository contains Spring projects code.
 
 4. Exception Handling in Spring Application
    - Exception handling with try-catch in Controller methods [error-handling](https://github.com/eMahtab/spring-projects/tree/main/spring-core/error-handling)
+   - Exception handling with @ExceptionHandler annotated methods in Controller class [exception-handler](https://github.com/eMahtab/spring-projects/tree/main/spring-core/exception-handler)
    
 
 ## Spring MVC
