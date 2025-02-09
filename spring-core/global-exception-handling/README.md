@@ -48,7 +48,7 @@ public class GlobalExceptionHandler {
 
 ## ProductController
 
-**The ProductController looks much cleaner, as we have moved Exception handlers to GlobalExceptionHandler class which is annotated with @RestControllerAdvice.**
+**👉 The ProductController looks much cleaner, as we have moved Exception handlers to GlobalExceptionHandler class which is annotated with @RestControllerAdvice.**
 
 **👉 Note that we can still have specific exception handlers in the ProdcutController for exceptions which are not handled by GlobalExceptionHandler.**
 
