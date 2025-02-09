@@ -8,6 +8,20 @@ Any class annotated with @RestControllerAdvice becomes a controller-advice and t
 
 !["Project Structure"](images/project.png)
 
+## Error Handling
+
+### GET - Product with given id not found
+
+!["Product with given id not found"](images/error-1.png)
+
+### POST - Required field, name missing in the request body
+
+!["Required field missing in request body"](images/error-2.png)
+
+### DELETE - Product with given id not found
+
+!["Product with given id not found"](images/error-3.png)
+
 ## GlobalExceptionHandler
 
 ```java
