@@ -11,7 +11,7 @@ This repository contains Spring projects code.
 3. Annotations based configuration and classpath scanning using Stereotype annotations : [spring-core/stereotype-annotations](https://github.com/eMahtab/spring-projects/tree/main/spring-core/stereotype-annotations)
 
 4. Exception Handling in Spring Application
-- Exception handling with try-catch in Controller methods [error-handling](https://github.com/eMahtab/spring-projects/tree/main/spring-core/error-handling)
+   - Exception handling with try-catch in Controller methods [error-handling](https://github.com/eMahtab/spring-projects/tree/main/spring-core/error-handling)
    
 
 ## Spring MVC
