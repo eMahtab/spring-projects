@@ -93,5 +93,4 @@ public class ProductController {
     private ResponseEntity<String> handleBackendGeneralException(Exception e) {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
     }
-
 }
