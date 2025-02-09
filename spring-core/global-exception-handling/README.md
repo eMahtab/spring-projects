@@ -119,6 +119,6 @@ public class ProductController {
 
 # Key Points :
 
-In Spring we use **@Controller** when building web applications (e.g. in Spring MVC app) that return HTML views.
+In Spring, when building web applications (e.g. in Spring MVC app) that return HTML views, we use **@Controller** .
 
 And we use **@RestController** when creating RESTful APIs that return JSON/XML.
