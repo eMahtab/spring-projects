@@ -116,3 +116,11 @@ public class ProductController {
     }
 }
 ```
+
+# Key Points : @ControllerAdvice and @RestControllerAdvice
+
+In Spring, when building web applications (e.g. in Spring MVC app) that return HTML views, we use **@Controller**. And we use **@RestController** when creating RESTful APIs that return JSON/XML.
+
+Both @ControllerAdvice and @RestControllerAdvice are used for global exception handling and to apply common functionality across multiple controllers.
+
+**@ControllerAdvice is used in Spring MVC application that returns views (HTML, JSP, etc.). And @RestControllerAdvice is used, when we are building a REST API where responses should be JSON/XML.**
