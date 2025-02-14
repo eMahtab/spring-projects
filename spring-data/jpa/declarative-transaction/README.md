@@ -73,3 +73,5 @@ public class AccountService {
 }
 ```
 
+# References :
+https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative.html
