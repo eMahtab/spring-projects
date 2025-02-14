@@ -58,8 +58,6 @@ public class AccountService {
             accountRepository.save(toAccount);
         });
     }
-
-
     public Account createAccount(Account account) {
         return transactionTemplate.execute(status -> {
             Optional<User> user = userRepository.findById(account.getUserId());
