@@ -14,7 +14,15 @@ This repository contains Spring projects code.
    - Exception handling with try-catch in Controller methods [error-handling](https://github.com/eMahtab/spring-projects/tree/main/spring-core/error-handling)
    - Exception handling with @ExceptionHandler annotated methods in Controller class [exception-handler](https://github.com/eMahtab/spring-projects/tree/main/spring-core/exception-handler)
    - Exception handling with Global Exception Handler class annotated with @RestControllerAdvice [global-exception-handling](https://github.com/eMahtab/spring-projects/tree/main/spring-core/global-exception-handling)
-   
+  
+
+## Spring Data JPA
+
+1. Simple Spring Data JPA example with H2 : [spring-data-jpa-example](https://github.com/eMahtab/spring-projects/tree/main/spring-data/jpa/spring-data-jpa-example)
+
+2. Transaction, Programmatic approach : [programmatic-transaction](https://github.com/eMahtab/spring-projects/tree/main/spring-data/jpa/programmatic-transaction)
+  
+3. Transaction, Declarative approach : [declarative-transaction](https://github.com/eMahtab/spring-projects/tree/main/spring-data/jpa/declarative-transaction)   
 
 ## Spring MVC
 
