@@ -4,7 +4,7 @@
 
 !["Project"](images/project.png)
 
-## Handling Transaction Programmatically using TransactionTemplate
+## Handling Transaction Programmatically using @Transactional
 
 **Any RuntimeException or Error triggers rollback, and any checked Exception does not.**
 
